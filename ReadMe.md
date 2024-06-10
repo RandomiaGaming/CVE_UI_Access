@@ -16,3 +16,6 @@ We can't just give UIAccess to a copy of our token because you need UIAccess in 
 We can't just launch our process with the winlogon token because it's already in use by winlogon.
 We can't just launch our process with a copy of winlogon's token because its setup to not allow that and we get access denied.
 We can't just call it good enough after impersonating the winlogon token because impersonating a token with UIAccess doesn't seem to work quite the same as actually having UIAccess and you're windows are still not super topmost.
+
+# Credits
+Huge shoutout to https://github.com/killtimer0/uiaccess/ for being the inspiration for this project!
